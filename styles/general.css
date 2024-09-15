@@ -4,3 +4,18 @@ p{
   margin-left: 0;
   margin-right: 0;
 }
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  /* margin-bottom: 2000px; */
+  margin-bottom: 0;
+  background-color: rgb(255, 228, 181);
+  padding-top: 100px;
+}
