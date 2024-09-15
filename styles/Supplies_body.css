@@ -1,0 +1,154 @@
+
+.body-box {
+  display: flex;
+  flex-direction: column;
+  background-image: radial-gradient(#ffedd1, #ffffff );
+}
+
+.Supplies-Question-box {
+  
+  z-index: 1;
+  display:flex;
+  flex-direction: row;
+  column-gap: 100px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 80px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 20px;
+  
+}
+
+.Supplies-text-1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  /* change color */
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  
+  background-color: rgb(255, 228, 181);
+  border-radius: 100px;
+  line-height: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+
+  transition: box-shadow 0.15s;
+}
+
+.Supplies-text-1:hover{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.Receiving-box {
+  /* background-color: rgb(255, 228, 181); */
+  /* background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 228, 181)); */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  z-index: 1;
+  display:flex;
+  flex-direction: row;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Receiving{
+  display:flex;
+  flex-direction: row;
+  column-gap: 50px;
+  border-style:dotted;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.Receiving-Title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+
+  border-style: solid;
+
+  border-left: 0;
+  border-top: 0;
+  border-bottom:0;
+  border-width: 5px;
+
+  flex:1;
+
+}
+
+.Receiving-Text{
+  flex:3;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.Receive-type-library,
+.Receive-type-dropoff{
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.Receive-type-dropoff{
+  padding-top: 15px;
+}
+
+.Inventory-box{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  z-index: 1;
+  display:flex;
+  flex-direction: column;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Inventory{
+  margin-left: 20%;
+  margin-right: 20%;
+
+  padding-left: 400px;
+  padding-right: 400px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-style: dashed;
+}
+
+.Inventory-text{
+  font-size: 20px;
+}
+
+.Thank-you-box{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  z-index: 1;
+  display: flex;
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-bottom: 80px;
+  margin-top: 80px;
+
+  padding: 10px;
+
+  font-size: 20px;
+  line-height: 35px;
+  justify-content: center;
+  text-align: center;
+
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
