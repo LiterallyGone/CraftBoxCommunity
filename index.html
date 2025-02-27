@@ -7,30 +7,24 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="html" href="header.html">
-
   </head>
-
 
 
   <body>
     <div class="header-box">
-      
+  
       <div class="title-box">
         <img class="logo-image" src="Images/Logo.png">
         <img src="Images/Craftbox_Title.png">
       </div>
       
       <div class="navigation-box">
-        
-
         <div class="Home-box">
           <a class="Home-text" href="index.html" >Home</a>
         </div>
-
         <div class="Donation-box">
           <a class="Donation-text" href="Donation.html">Donations</a>
         </div>
-
         <div class="Supplies-box">
           <a class="Supplies-text" href="Supplies.html">How To Get</a>
           <!-- disitibtunios location , orering onlinea -->
@@ -43,20 +37,16 @@
 
     <!-- maybe -->
     <img class="main-photo" src="Images/main_photo.png">
-    
 
     <div class="body-box">
       <div class="mission-text-box">
-
         <h3 class="mission-statement">
           Mission
         </h3>
-
         <p class="mission-info">
           Our mission is to provide free arts and crafts supplies to aspiring artists around the community to foster creativity and artistic growth!<br>
           We do this by collecting old or unused art supplies, restoring the supplies to working condition, and repackaging and redistributing these supplies to all people around the community! 
         </p>
-        
       </div>
 
       <div class="body1">     
@@ -70,13 +60,75 @@
             Please <b>contact us</b> if you would like any supplies to kick-start your artistic journey!
           </p>
         </div>
-    </div>
+      </div>
+
+      <div class ="slideshow-body">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img class="ss-image" src="Images/card_1.jpg" style="width:100%">
+            <!-- <div class="text">Caption Text</div> -->
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img class="ss-image" src="Images/card_2.jpg" style="width:100%">
+            <!-- <div class="text">Caption Two</div> -->
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img class="ss-image" src="Images/card_3.jpg" style="width:100%">
+            <!-- <div class="text">Caption Three</div> -->
+          </div>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+
+      <!-- script for slides -->
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+    
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+    
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+      </script>
 
 
       <div class="body2">
           <img class="image2"src="Images/supplies.jpg">
-          
-
           <div class="who-can-help">
             <h2>Who Can Help?</h2>
             <p>
@@ -88,7 +140,6 @@
       <div class="body3">
         <div class="items">
           <h3>Items that can be donated include but are not limited by: </h3>
-
             <table class="item-table">
               <tr>
                 <th>- paint tubes</th>
@@ -123,7 +174,6 @@
               </tr>
             </table>
         </div>
-
       </div>
     </div>
 
